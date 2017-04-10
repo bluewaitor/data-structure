@@ -1,31 +1,42 @@
 
 function Stack() {
+
+    // 存放数据
     var elements = [];
-    var top = 0;
 
+    // 栈顶添加元素
     this.push = function (element) {
-        elements[top++] = element;
+        elements.push(element);
     };
 
+    // 弹出栈顶元素
     this.pop = function () {
-        return elements.splice(--top, 1)[0];
+        return elements.pop();
     };
 
-    this.peek = function () {
-        return elements[top - 1];
+    // 查看栈顶元素
+    this.peak = function () {
+        return elements[elements.length - 1];
     };
 
-    this.length = function () {
-        return top;
+    // 判断栈是否为空
+    this.isEmpty = function() {
+        return elements.length === 0;
+    }
+
+    // 栈的长度
+    this.size = function () {
+        return elements.length;
     };
 
+    // 清除栈
     this.clear = function () {
-        top = 0;
         elements = [];
     };
 
+    // 将数组转化为字符串
     this.toString = function () {
-        return elements;
+        return elements.toString();
     };
 }
 
