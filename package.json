@@ -1,0 +1,25 @@
+{
+  "name": "data-structure",
+  "version": "1.0.0",
+  "description": "ds",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluewaitor/data-structure.git"
+  },
+  "keywords": [
+    "data-structure"
+  ],
+  "author": "bluewaitor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bluewaitor/data-structure/issues"
+  },
+  "homepage": "https://github.com/bluewaitor/data-structure#readme",
+  "devDependencies": {
+    "jest": "^19.0.2"
+  }
+}

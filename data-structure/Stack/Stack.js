@@ -8,7 +8,7 @@ function Stack() {
     };
 
     this.pop = function () {
-        return elements.splice(--top, 1);
+        return elements.splice(--top, 1)[0];
     };
 
     this.peek = function () {
@@ -21,6 +21,7 @@ function Stack() {
 
     this.clear = function () {
         top = 0;
+        elements = [];
     };
 
     this.toString = function () {

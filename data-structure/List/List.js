@@ -79,7 +79,7 @@ function List() {
      * 清除整个列表
      */
     this.clear = function () {
-        console.log(delete elements);
+        // delete elements;
         elements = [];
         listSize = pos = 0;
     };
